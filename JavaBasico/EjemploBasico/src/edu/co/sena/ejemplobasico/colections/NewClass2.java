@@ -6,6 +6,7 @@
 package edu.co.sena.ejemplobasico.colections;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -33,15 +34,20 @@ public class NewClass2 {
         
         Carro ce = new Carro();
         ce.setPlaca("123456");
+        Carro cr = new Carro();
+        cr.setPlaca("123456");
         
         
         
         for (Carro carro : lista) {
             if(ce.equals(carro)){//"123456".equesl("sdfasdf")
-            ce=carro;
+            
             }
         }
-        ce.setPlaca("nuevo");
+        
+        
+        
+        
         
         for (Carro carro : lista) {
             System.out.println(carro.getPlaca());
